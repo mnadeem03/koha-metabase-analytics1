@@ -4,17 +4,19 @@ Ready-to-use Metabase package with pre-built **Koha** dashboards and reports.
 
 Made for librarians (no technical knowledge required).
 
+---
+
 ## How to Install (Very Simple)
 
 ### Step 1 – Download the files
 
 1. Click the green **Code** button → **Download ZIP**
 2. Go to the **Releases** section (right side of this page)
-3. Download .zip file
+3. Download the full `.zip` file
 
 ### Step 2 – Prepare the folder
 
-1. Extract the ZIP you downloaded from GitHub
+1. Extract the ZIP file you downloaded
 
 ### Step 3 – Start Metabase
 
@@ -24,8 +26,7 @@ Wait 30–60 seconds until it says Metabase is ready.
 
 ### Step 4 – Open & Login
 
-The browser should open automatically.  
-If not, go to: **http://localhost:3000**
+Go to: **http://localhost:3000**
 
 **Temporary Login:**
 
@@ -40,15 +41,45 @@ If not, go to: **http://localhost:3000**
 4. Change the password to something only you know
 5. Click **Save**
 
+---
+
 ## How to Stop Metabase
 
 Double-click **`shutdown-metabase.bat`**
+
+---
 
 ## What is included?
 
 - Pre-designed Koha dashboards and reports
 - Simple start and stop buttons
 - Portable Java (no need to install Java separately)
+
+---
+
+## How to Connect Your Koha Database (Important for Real-time Data)
+
+For the best real-time analysis, you should connect Metabase to your live Koha database.
+
+### Recommended Method:
+
+1. Ask your system administrator or IT person to create a **read-only** user account in your Koha MySQL / MariaDB database.
+2. Open Metabase and go to **Admin** → **Databases** → **Add a database**.
+3. Select **MySQL** (or MariaDB).
+4. Enter the following details of the read-only user:
+   - Host
+   - Port (usually 3306)
+   - Database name (usually `koha_library` or similar)
+   - Username
+   - Password
+5. Click **Save**.
+6. Wait a few moments while Metabase scans the database.
+
+After the connection is successful, all the pre-built Koha dashboards will become active and show live data.
+
+> **Note:** Using a read-only user is strongly recommended for security reasons.
+
+---
 
 ## Notes
 
