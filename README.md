@@ -10,24 +10,12 @@ Made for librarians (no technical knowledge required).
 
 1. Click the green **Code** button → **Download ZIP**
 2. Go to the **Releases** section (right side of this page)
-3. Download these two large files from the latest Release:
-   - `metabase.jar`
-   - `java.zip`
+3. Download .zip file
 
 ### Step 2 – Prepare the folder
 
 1. Extract the ZIP you downloaded from GitHub
-2. Extract `java.zip` so you get a folder named `java`
-3. Put `metabase.jar` in the same folder
 
-Your final folder should look like this:
-Koha-Metabase/
-├── java/
-├── metabase.jar
-├── metabase.db.mv.db
-├── start-metabase.bat
-├── shutdown-metabase.bat
-└── README.md
 ### Step 3 – Start Metabase
 
 Double-click **`start-metabase.bat`**
