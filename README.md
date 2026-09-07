@@ -64,7 +64,7 @@ For the best real-time analysis, you should connect Metabase to your live Koha d
 ### Recommended Method:
 
 1. Ask your system administrator or IT person to create a **read-only** user account in your Koha MySQL / MariaDB database.
-2. Open Metabase and go to **Admin** → **Databases** → **Add a database**.
+2. Open Metabase and go to **Admin** → **Databases** → **Edit/Add a database**.
 3. Select **MySQL** (or MariaDB).
 4. Enter the following details of the read-only user:
    - Host
